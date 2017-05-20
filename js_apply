@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>javascript apply</title>
+	<!--external apply-->
+	<script src="script.js"></script>
+</head>
+<body>
+<button id="createp">click me</button>
+<!-- internal apply,just use <script></script> -->
+<script>
+function createParagraph(){
+    var para=document.createElement('p');
+    para.textContent='You click the button';
+    document.body.appendChild(para);
+}
+var buttonCreateP = document.getElementById('createp');
+buttonCreateP.addEventListener('click',createParagraph);
+</script>
+<button onclick="createA()">create link</a>
+</body>
