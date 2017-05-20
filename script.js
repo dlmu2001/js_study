@@ -6,3 +6,7 @@ function createA(){
 }
 var buttonCreateA=document.getElementById('createa');
 buttonCreateA.addEventListener('click',createA);
+
+//comment 1
+/* comment 2*/
+
