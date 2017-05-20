@@ -3,9 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>javascript apply</title>
-	<!--external apply-->
-	<script src="script.js"></script>
-</head>
+	</head>
 <body>
 <button id="createp">click me</button>
 <!-- internal apply,just use <script></script> -->
@@ -18,5 +16,8 @@ function createParagraph(){
 var buttonCreateP = document.getElementById('createp');
 buttonCreateP.addEventListener('click',createParagraph);
 </script>
-<button onclick="createA()">create link</a>
+<button id="createa">create link</a>
+<!--external apply,here note it should be load after createa tag-->
+<script src="script.js"></script>
 </body>
+</html>
