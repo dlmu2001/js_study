@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>变量定义</title>
+</head>
+<body>
+   <button>press me</button>
+   <script>
+   //变量声明,定义没有赋值，是undefined变量,没有定义，则是not defined
+   var myName;
+   //变量初始化
+   myName='Thomas';
+   //变量声明同时赋值
+   var button = document.querySelector('button');
+   button.onclick=function(){
+    var name= prompt('what is your name');
+    if (name === 'tom'){
+        alert('hello old friend');
+    }else {
+        alert('hello '+name);
+    }
+   };
+
+   //变量类型
+   var myAge=17;//Number
+   var city='shanghai';//Strings
+   var iAmAlive=true;//Boolean
+   var myNameArray = ['chris','bob','jim'];//arrays
+   var myNumArray=[10,15,40];
+   var dog = {name:'Spot',breed:'Al'};//object
+   console.log(dog.name);
+
+   //Loose type
+   var myNumber='500';
+   console.log(typeof(myNumber));
+   myNumber=500;
+   console.log(typeof(myNumber));
+   </script>
+</body>
+</html>
