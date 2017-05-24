@@ -30,12 +30,61 @@
    var myNumArray=[10,15,40];
    var dog = {name:'Spot',breed:'Al'};//object
    console.log(dog.name);
+   //数组里面的每一项可以是不同的类型
+   var random=['tree',795,[1,2,3]];
 
    //Loose type
    var myNumber='500';
    console.log(typeof(myNumber));
    myNumber=500;
    console.log(typeof(myNumber));
+   //number和string类型转换
+   var myDate='19'+'67';
+   console.log('myDate type:'+typeof(myDate));
+
+   var myString='123';
+   var myNum=Number(myString);//如果myString不是数字，Number函数返回NaN，可以使用isNaN来判断
+   console.log('myNum type:'+typeof(myNum));
+   var myString2=myNum.toString();
+   console.log('myString2 type:'+typeof(myString2));
+
+   //数组的操作
+   var sequence=[0,1,2,3,4,5,6,7];
+   //使用length属性返回数组长度
+   console.log("len of sequence is "+sequence.length);
+   //轮询数组
+   for(var i=0;i<sequence.length;i++){
+       console.log(sequence[i]);
+   }
+   //字符串和数组之间的相互转换
+   var myData = 'Manchester,London,Liverpool,Birmingham,Leeds,Carlisle';
+   var myArray = myData.split(',');
+   console.log("length of myArray :"+myArray.length+",myArray[0]="+myArray[0]);
+   var myNewString = myArray.join(',');
+   console.log('myNewString:'+myNewString);
+   //使用push(),pop()在数组后面添加／移除　item
+   myArray.push('Cardiff');
+   console.log(myArray);
+   var item=myArray.pop();
+   console.log(myArray);
+   console.log("remove "+item);
+  //使用unshift,shift在数组头部插入/移除 item
+   myArray.unshift('Edinburgh');
+   console.log(myArray);
+   var removedItem=myArray.shift();
+   console.log(myArray);
+   console.log("remove "+removedItem);
+  //得到某一个item的index
+   var pos = myArray.indexOf('Liverpool');
+   console.log('pos='+pos);
+   //删除指定位置
+   myArray.splice(pos,1);
+   console.log(myArray);
+
+   //拷贝数组
+   var myArrayCopy=myArray.slice();
+   console.log(myArrayCopy);
+
    </script>
 </body>
 </html>
