@@ -6,6 +6,8 @@
  
  * javascript的promise有点像rxjava，当然，最核心的转换没有
  
+ * javascript的作用域很特别
+ 
  
 
 
