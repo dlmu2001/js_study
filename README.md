@@ -1,6 +1,6 @@
 ## javascript study
 
- * javascript以map的方式来定义一个对象，这个对象就显得非常灵活,也天然适合和json结合
+ * javascript以map（或者像oc的dictionary)的方式来定义一个对象，这个对象就显得非常灵活,也天然适合和json结合
 
  * javascript允许在对象声明后任何时刻新增/删除属性，非常灵活
  
